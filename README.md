@@ -1,12 +1,12 @@
-# Worker Pool Implementation
-
+# Worker Pool in Go
 ![Go Version](https://img.shields.io/badge/go-1.21+-blue.svg)
 ![License](https://img.shields.io/badge/license-GPLv3-green.svg)
 
-Реализация пула воркеров на Go с использованием горутин и каналов.
+Простая и эффективная реализация пула воркеров на горутинах для параллельной обработки задач. Позволяет ограничить количество одновременно выполняемых операций, идеально подходит для обработки URL, файлов или любых других задач, требующих контроля за параллелизмом.
 
-## Установка
-```bash
-git clone https://github.com/yourusername/worker-pool.git
-cd worker-pool
-go mod tidy
+**Ключевые особенности:**
+- Фиксированное количество воркеров
+- Безопасная передача задач через каналы
+- Автоматическое распределение задач
+- Простое API (Start/Stop/AddTask)
+
